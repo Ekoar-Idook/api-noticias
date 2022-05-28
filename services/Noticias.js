@@ -1,7 +1,8 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 
-function Noticias(params) {
+function Noticias() {
+  // console.log(params);
   const url = "https://sindpd.org.br/sindpd/site/categoria.jsp?id=0";
   const encode = "latin1";
   const htmlDiv = ".boxHomeInner";

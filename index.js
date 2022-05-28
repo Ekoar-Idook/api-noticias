@@ -6,7 +6,15 @@ const app = express();
 const port = 4200;
 //require("./config/db");
 
-require("./services/Noticias");
+const url = "https://sindpd.org.br/sindpd/site/categoria.jsp?id=0";
+const encode = "latin1";
+const htmlDiv = ".boxHomeInner";
+
+require("./services/BuscarNoticias");
+
+//const noticias = buscar.BuscarNoticias(url, encode, htmlDiv);
+
+//console.log(noticias);
 
 // Habilitar o Cors
 app.use(cors());
