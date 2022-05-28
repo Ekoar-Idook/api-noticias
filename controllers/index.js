@@ -10,7 +10,7 @@ module.exports = {
   },
 
   async Buscar(req, res) {
-    console.log(req.body);
+    //  console.log(req.body);
     const url = req.body.url;
     const encode = req.body.encode;
     const htmlDiv = req.body.htmlDiv;
@@ -22,6 +22,7 @@ module.exports = {
     const noticias =
       await require("./../services/BuscarNoticias").BuscarNoticias(
         url,
+
         encode,
         htmlDiv,
         htmlLink,
