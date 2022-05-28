@@ -1,0 +1,9 @@
+{
+  "url": "https://sindpd.org.br/sindpd/site/categoria.jsp?id=0",
+  "encode": "latin1",
+  "htmlDiv": ".boxHomeInner",
+  "htmlLink": "a, attr, href",
+  "htmlData": ".vejaMais, text",
+  "htmlTitulo": "img, attr, title",
+  "htmlImagem": "img, attr, src"
+}
