@@ -3,7 +3,7 @@ const rotas = require("./rotas");
 const cors = require("cors");
 
 const app = express();
-const port = 8080;
+const port = 4200;
 //require("./config/db");
 
 const url = "https://sindpd.org.br/sindpd/site/categoria.jsp?id=0";
