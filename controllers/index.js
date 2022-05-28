@@ -10,13 +10,14 @@ module.exports = {
   },
 
   async Buscar(req, res) {
-    const url = "https://sindpd.org.br/sindpd/site/categoria.jsp?id=0";
-    const encode = "latin1";
-    const htmlDiv = ".boxHomeInner";
-    const htmlLink = "a, attr, href";
-    const htmlData = ".vejaMais, text";
-    const htmlTitulo = "img, attr, title";
-    const htmlImagem = "img, attr, src";
+    console.log(req.body);
+    const url = req.body.url;
+    const encode = req.body.encode;
+    const htmlDiv = req.body.htmlDiv;
+    const htmlLink = req.body.htmlLink;
+    const htmlData = req.body.htmlData;
+    const htmlTitulo = req.body.htmlTitulo;
+    const htmlImagem = req.body.htmlImagem;
 
     const noticias =
       await require("./../services/BuscarNoticias").BuscarNoticias(

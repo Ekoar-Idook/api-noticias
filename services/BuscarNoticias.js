@@ -11,18 +11,15 @@ module.exports = {
     htmlTitulo,
     htmlImagem
   ) {
-    //console.log("url", url);
-    //console.log("encode", encode);
-    //console.log("htmlDiv", htmlDiv);
-
     const linkSplit = htmlLink.split(", ");
     const dataSplit = htmlData.split(", ");
     const tituloSplit = htmlTitulo.split(", ");
     const imagemSplit = htmlImagem.split(", ");
-    console.log(linkSplit[0], linkSplit[1], linkSplit[2]);
-    console.log(dataSplit[0], dataSplit[1], dataSplit[2]);
-    console.log(tituloSplit[0], tituloSplit[1], tituloSplit[2]);
-    console.log(imagemSplit[0], imagemSplit[1], imagemSplit[2]);
+
+    //console.log(linkSplit[0], linkSplit[1], linkSplit[2]);
+    // console.log(dataSplit[0], dataSplit[1], dataSplit[2]);
+    //console.log(tituloSplit[0], tituloSplit[1], tituloSplit[2]);
+    //console.log(imagemSplit[0], imagemSplit[1], imagemSplit[2]);
 
     const response = await axios({
       method: "GET",
